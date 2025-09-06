@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Internship Recommender - Government of India</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWpU3wz60VvL4p2sJ4K5VvGz8U1nF0Cj0T/Q4B+I/j/K1sN/s6b+Vq7+b+RzWpT+Q4Wp1sQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+    <div class="animated-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="particle" style="animation-duration: 25s; left: 10%; top: 20%; transform: scale(1.5);"></div>
+        <div class="particle" style="animation-duration: 18s; left: 80%; top: 60%; transform: scale(0.8);"></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="pm_internship_logo_eng.svg" alt="PM Internship Logo">
+            </div>
+            
+            <div class="nav-search">
+                <input type="text" placeholder="Search internships..." class="search-input" id="searchInput">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#apply" class="nav-link apply-btn">Apply Now</a>
+                <div class="nav-language-theme">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme mode">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="language-selector-container">
+                        <i class="fas fa-globe-americas globe-icon"></i>
+                        <select class="language-selector" id="languageSelector">
+                            <option value="en">English</option>
+                            <option value="hi">Hindi</option>
+                            <option value="bn">Bengali</option>
+                            <option value="te">Telugu</option>
+                            <option value="mr">Marathi</option>
+                            <option value="ta">Tamil</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <section class="hero-section">
+            <div class="hero-content" data-aos="fade-right">
+                <h1 class="hero-title" id="heroTitle">One Platform For Your Career Journey</h1>
+                <p class="hero-subtitle">Connect with India's top companies through government internship programs. Get AI-powered recommendations tailored to your skills and preferences.</p>
+                <button class="cta-button">Find My Internship</button>
+            </div>
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="hero-orb"></div>
+                <div class="hero-orb small"></div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-number" data-target="25000">0</div>
+                    <div class="stat-label">Internships Listed</div>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon">🏢</div>
+                    <div class="stat-number" data-target="1200">0</div>
+                    <div class="stat-label">Companies Partnered</div>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon">👨‍🎓</div>
+                    <div class="stat-number" data-target="150000">0</div>
+                    <div class="stat-label">Students Enrolled</div>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-number" data-target="95">0</div>
+                    <span class="stat-number-suffix">%</span>
+                    <div class="stat-label">Placement Rate</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works" id="how-it-works">
+            <h2 class="section-title" data-aos="fade-up">How It Works</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Our simple process to help you land your dream internship.</p>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-right">
+                    <div class="step-icon">1</div>
+                    <h3>Sign Up & Create Profile</h3>
+                    <p>Register on the platform and build a comprehensive profile with your skills, education, and interests.</p>
+                </div>
+                <div class="arrow-icon">→</div>
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-icon">2</div>
+                    <h3>Get Personalized Matches</h3>
+                    <p>Our AI-powered engine analyzes your profile to recommend internships that are the perfect fit for you.</p>
+                </div>
+                <div class="arrow-icon">→</div>
+                <div class="step" data-aos="fade-left" data-aos-delay="400">
+                    <div class="step-icon">3</div>
+                    <h3>Apply & Secure Internship</h3>
+                    <p>Easily apply to your preferred internships with a single click and track your application status in real-time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="internship-opportunities-section" id="internship-opportunities">
+            <h2 class="section-title" data-aos="fade-up">Top Internship Opportunities</h2>
+            <div class="internship-loop-container">
+                <div class="internship-track">
+                    <div class="internship-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-header">
+                            <span class="company-logo">💡</span>
+                            <span class="internship-type">Full-Time</span>
+                        </div>
+                        <h3 class="card-title">Data Science Intern</h3>
+                        <p class="company-name">Ministry of Statistics And Programme Implementation</p>
+                        <p class="location">New Delhi</p>
+                        <div class="card-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                        <p class="card-stipend">₹ 25,000 / month</p>
+                    </div>
+
+                    <div class="internship-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-header">
+                            <span class="company-logo">💻</span>
+                            <span class="internship-type">Part-Time</span>
+                        </div>
+                        <h3 class="card-title">Frontend Developer</h3>
+                        <p class="company-name">MyGov, Ministry Of Electronics & IT</p>
+                        <p class="location">Bengaluru</p>
+                        <div class="card-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <p class="card-stipend">₹ 20,000 / month</p>
+                    </div>
+
+                    <div class="internship-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-header">
+                            <span class="company-logo">👩‍💼</span>
+                            <span class="internship-type">Full-Time</span>
+                        </div>
+                        <h3 class="card-title">Public Policy Analyst</h3>
+                        <p class="company-name">NITI Aayog</p>
+                        <p class="location">New Delhi</p>
+                        <div class="card-tags">
+                            <span class="tag">Research</span>
+                            <span class="tag">Policy</span>
+                            <span class="tag">Economics</span>
+                        </div>
+                        <p class="card-stipend">₹ 30,000 / month</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us" id="about">
+            <h2 class="section-title" data-aos="fade-up">About Pm Internship</h2>
+            <div class="about-content">
+                <p data-aos="fade-up" data-aos-delay="100">The PM Internship platform is a flagship initiative by the Government of India designed to bridge the gap between talented students and public service opportunities. We believe that by providing a single, accessible platform, we can empower the youth of India to contribute to nation-building through meaningful internships in various government ministries and departments.</p>
+                <p data-aos="fade-up" data-aos-delay="200">Our mission is to democratize access to high-quality government internships, making it easier for students from all backgrounds to find and apply for positions that align with their skills and aspirations. We leverage technology to offer a seamless and transparent application process, ensuring that every student has an equal opportunity to thrive.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3 class="footer-title">PM Internship</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#internship-opportunities">Internship Opportunities</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#help">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Connect</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📧</a>
+                        <a href="#" class="social-link">📱</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Government of India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
